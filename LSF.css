@@ -1,0 +1,578 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+#section1{
+  width: 100%;
+  height: 50vh;
+  background-image: url(./assets/images/fotonr1.png);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.navbar{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 10;
+}
+.navbar .logo{
+  width: 15%;
+  margin: 30px 0;
+  cursor: pointer; 
+}
+.user {
+  display: flex;
+  align-items: center;
+
+}
+
+button{
+  color: white;
+  padding: 3px 12px;
+  background: transparent;
+  outline: none;
+  border: 2px solid white;
+  border-radius: 20px;
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+  cursor: pointer; 
+}
+
+button a{
+  color: white;
+}
+
+.shqipbutton{
+    margin-left: 30px;
+}
+.container{
+  width: 50%;
+  height: 50vh;
+  background: rgba(86,86,86,0.3);
+  backdrop-filter: blur(10px);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.info h1{
+  font-size: 15px;
+  font-size-adjust: auto;
+  position: absolute;
+  padding-left: 4px;
+  padding-right: 1px;
+  color: white;
+  bottom: 70%;
+  border: 2px white;
+  border-top-style: none;
+  border-right-style: none;
+  border-bottom-style: inset;
+  border-left-style: none;
+  background-color: transparent;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+
+}
+
+.info h2{
+  font-size: 15px;
+  padding-left: 4px;
+  padding-right: 1px;
+  color: white;
+  position: absolute;
+  bottom: 55%;
+  border: 2px white;
+  border-bottom-style: inset;
+  border-left-style: none;
+  background-color: transparent;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+
+}
+.info p{
+  padding-left: 20%;
+  padding-right: 10%;
+  color: white;
+  position: absolute;
+  bottom: 8%;
+  font-size: 8px;
+}
+.info h3{
+  padding-left: 70%;
+  padding-right: 10%;
+  float: right;
+  color: white;
+  position: absolute;
+  bottom: 3%;
+  font-size: 8px;
+}
+
+@media only screen and (min-width: 500px) {
+    
+    #section1{
+      width: 100%;
+      height: 50vh;
+    }
+
+    button{
+  color: white;
+  padding: 8px 16px;
+  background: transparent;
+  outline: none;
+  border: 2px solid white;
+  border-radius: 20px;
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+  cursor: pointer; 
+}
+
+    .container{
+      width: 50%;
+      height: 50vh;
+    }
+    .info h1{
+        font-size: 20px;
+    } 
+    .info h2{
+        font-size: 20px;
+    } 
+    .info p{
+        font-size: 10px;
+        bottom: 16%;
+    } 
+    .info h3{
+        font-size: 10px;
+        bottom: 12%;
+    }  
+}
+@media only screen and (min-width: 780px) {
+    
+    #section1{
+      width: 100%;
+      height: 100vh;
+    }
+    button{
+      color: white;
+      padding: 10px 20px;
+      background: transparent;
+      outline: none;
+      border: 2px solid white;
+      border-radius: 20px;
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+      cursor: pointer; 
+    }
+    .container{
+      width: 50%;
+      height: 100vh;
+    }
+    .info h1{
+        font-size: 30px;
+    } 
+    .info h2{
+        font-size: 30px;
+    } 
+    .info p{
+        font-size: 18px;
+        bottom: 11%;
+    } 
+    .info h3{
+        font-size: 19px;
+        bottom: 7%;
+    }  
+}
+@media only screen and (min-width: 1000px) {
+    
+    #section1{
+      width: 100%;
+      height: 100vh;
+    }
+
+    .container{
+      width: 50%;
+      height: 100vh;
+    }
+    .info h1{
+        font-size: 50px;
+    } 
+    .info h2{
+        font-size: 50px;
+    } 
+    .info p{
+        font-size: 20px;
+        bottom: 13%;
+    } 
+    .info h3{
+        font-size: 23px;
+        bottom: 8%;
+    }  
+}
+@media only screen and (min-width: 1200px) {
+    
+    #section1{
+      width: 100%;
+      height: 100vh;
+    }
+
+    .container{
+      width: 50%;
+      height: 100vh;
+    }
+    .info h1{
+        font-size: 50px;
+    } 
+    .info h2{
+        font-size: 50px;
+    } 
+    .info p{
+        font-size: 25px;
+        bottom: 15%;
+    } 
+    .info h3{
+        font-size: 27px;
+        bottom: 11%;
+    }  
+}
+/* ================================================  */
+
+.container2 {
+  margin-top: 40px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: 
+  "contwotext"
+  "contwoimg";
+  grid-gap: 20px;
+
+}
+
+.contwoimg {
+  grid-area: contwoimg;
+  }
+.contwoimg img{
+  max-width: 100%;
+}
+
+.contwotext {
+  grid-area: contwotext;
+}
+
+.contwotext p {
+  font-size: 20px;
+  text-align: justify;
+}
+/* ================================================  */
+.container3 {
+  margin-top: 40px;
+  width: 90%;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: 
+  "cardone"
+  "cardtwo"
+  "cardthree"
+  "cardfour";
+
+}
+.cardthree, .cardtwo, .cardfour{
+  max-width: 100%;
+  padding-top: 5%;
+  background-color: azure;
+  border: 3px blue;
+  border-style: outset;
+  margin-top: 30px;
+  margin-left: 5%;
+  margin-right: 5%;
+
+}
+.card-img-top {
+  max-width: 90%;
+  max-height: 300px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.card-title{
+  font-size: 20px;
+  font-family: "Raleway Light", sans-serif;
+  color: black;
+  line-height: auto;
+  max-width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: center;
+  
+}
+.card-text{
+  font-size: 20px;
+  font-family: "Raleway Light", sans-serif;
+  color: black;
+  line-height: auto;
+  max-width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: justify;
+  
+}
+
+.cardone{
+  margin-top: 30px;
+  max-width: 95%; 
+  background-color: azure;
+  border: 3px blue;
+  border-style: outset;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+ }
+.card1-text1{
+  font-size: 25px;
+  font-style: strong;
+  line-height: auto;
+    max-width: 90%;
+  margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+}
+.cardone {
+  grid-area: cardone;
+  grid-column: 1/5;
+}
+.cardtwo {
+  grid-area: cardtwo;
+}
+.cardthree {
+  grid-area: cardthree;
+}
+.cardfour {
+  grid-area: cardfour;
+}
+
+/* ================================================  */
+
+.container4 {
+  margin-top: 40px;
+  width: 90%;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: 
+  "box"
+  "cardone";
+}
+.cardone {
+  grid-area: cardone;
+  grid-column: 1/5;
+  }
+.box{
+  grid-area: boxone;
+  grid-column: 1/5;
+
+}
+.part7text {
+  max-width: 100%;
+  }
+.par7text p{
+  max-width: 100%;
+  background-color: transparent;
+  font-size: 20px;
+  border-bottom-style: groove;
+  border-bottom-width: 2px;
+  border-color: blue;
+  text-align: justify;
+}
+  .cardone{
+  margin-top: 30px;
+  max-width: 100%; 
+  background-color: azure;
+  border: 3px blue;
+  border-style: outset;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+.card2-text1{
+  font-size: 20px;
+  line-height: auto;
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: justify;
+}
+.card2-text2{
+  font-size: 20px;
+  margin-left: 10%;
+    margin-right: 10%;
+    float: right;
+}
+/* ooooooooooooooooooooooooooooooooooooooooooooooooooooooooo*/
+#hero{
+  margin-top: 40px;
+  margin-bottom: 40px;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 80vh;
+  background-image: url(./assets/images/lasagrada2.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+::placeholder{
+  color: #ccc;
+}
+.slider{
+  max-width: 300px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  margin-left: 15%;
+  bottom: 50px;
+}
+
+#prev, #next {
+  width: 5%;
+  cursor: pointer;
+}
+.preview {
+  display: flex;
+  align-items: center;
+  
+
+}
+.preview img{
+  max-width: 40px;
+  margin: 0 5px;
+  opacity: 40%;
+}
+.preview .active{
+  display: block;
+  border: 3px solid white;
+  width: 40px;
+  opacity: 1;
+}
+
+
+/* ooooooooooooooooooooooooooooooooooooooooooooooooooooooooo*/
+
+
+.container5 {
+  margin-top: 40px;
+  width: 90%;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: 
+  "par8text"
+  "cardlast"
+  "par9text";
+  
+}
+.par8text {
+  max-width: 100%;
+  grid-area: par8text;
+  margin-left: auto;
+  margin-right: auto;
+
+  }
+.par8text p{
+  background-color: transparent;
+  font-size: 20px;
+  border-bottom-style: groove;
+  border-bottom-width: 2px;
+  border-color: blue;
+  text-align: justify;
+}
+  .cardlast{
+  grid-area: cardlast;
+  margin-top: 30px;
+  max-width: 100%; 
+  background-color: azure;
+  border: 3px blue;
+  border-style: outset;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+
+}
+ .cardlast p{
+  font-size: 20px;
+  line-height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: center;
+}
+.card3-text2{
+  font-size: 20px;
+  max-width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  float: right;
+}
+
+.par9text {
+  max-width: 100%;
+  grid-area: par9text;
+  margin-left: auto;
+  margin-right: auto;
+  }
+.par9text p{
+  max-width: 100%;
+  background-color: transparent;
+  font-size: 20px;
+  border-bottom-style: groove;
+  border-bottom-width: 2px;
+  border-color: blue;
+  text-align: justify;
+}
+/* ================================================  */
+
+@media only screen and (min-width: 780px) {
+
+.container2 {
+  margin-top: 40px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-template-areas: 
+  "contwotext contwoimg";
+  grid-gap: 20px;
+
+}
+.container3 {
+  margin-top: 40px;
+  width: 90%;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: 
+  "cardone cardone cardone"
+  "cardtwo cardthree cardfour";
+  grid-gap: 20px;
+ }
+
+}
